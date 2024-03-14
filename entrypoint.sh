@@ -17,11 +17,11 @@ else
 fi
 
 # Run locust script
-locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL --csv=example
+locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL --csv=results
 
 # Print files in the current directory
 echo "Files in Current Directory:"
 ls -l
 
 # Print the contents of the CSV file
-cat example_stats.csv
+cat results_stats.csv
