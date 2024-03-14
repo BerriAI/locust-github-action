@@ -17,7 +17,7 @@ else
 fi
 
 # Run locust script
-locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL --csv=results
+locust -f $file --headless -u $INPUT_USERS -r $INPUT_RATE --run-time $INPUT_RUNTIME -H $INPUT_URL --csv=load_test --html=load_test.html
 
 # Print files in the current directory
 echo "Files in Current Directory:"
