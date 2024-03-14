@@ -25,3 +25,6 @@ ls -l
 
 # Print the contents of the CSV file
 cat results_stats.csv
+
+# Read the contents of the CSV file into a variable
+csv_values=$(cat results_stats.csv)
