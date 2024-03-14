@@ -23,6 +23,9 @@ inputs:
     description: 'Specify the run time for a test. Defaults to 10 seconds.'
     required: false
     default: '10s'
+outputs:
+  csv_values:
+    description: 'String containing the values read from the CSV file.'
 runs:
   using: 'docker'
   image: 'Dockerfile'
